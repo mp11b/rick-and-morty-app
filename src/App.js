@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useEffect, useState} from 'react';
 import Navbar from './components/Navbar';
-import Characters from './components/Characters';
+import Characters from './components/Characters/Characters';
 import Pagination from './components/Pagination';
 import Search from './components/Search';
 import Title from './components/Title';
@@ -10,19 +10,23 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Episodes from './pages/Episodes';
 import Favorites from './pages/Favorites';
 
+import {GlobalProvider} from "./components/Context/GlobalState"
+
 function App(){
   return (
-    <Router>
-      <div className="App">
-        <Navbar title="Rick and Morty"/>
-      </div>
+    <GlobalProvider>
+      <Router>
+        <div className="App">
+          <Navbar title="Rick and Morty"/>
+        </div>
 
-      <Routes>
-        <Route path="/" element = {<Home/>}/>
-        <Route path="/episodes" element = {<Episodes/>}/>
-        <Route path="/favorites" element = {<Favorites/>}/>
-      </Routes>
-    </Router>
+        <Routes>
+          <Route path="/" element = {<Home/>}/>
+          <Route path="/episodes" element = {<Episodes/>}/>
+          <Route path="/favorites" element = {<Favorites/>}/>
+        </Routes>
+      </Router>
+    </GlobalProvider>
   );
 }
 

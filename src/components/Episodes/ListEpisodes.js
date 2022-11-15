@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import EpisodeModal from './Modals/EpisodeModal'
+import EpisodeModal from '../Modals/EpisodeModal'
 
 function ListEpisodes({episodes = []}) {
 
@@ -9,15 +9,15 @@ function ListEpisodes({episodes = []}) {
         <div className="episodes">
             <ul className="list-group">
                 {episodes.map((episode, index) => (
-                    <button 
+                    <a 
                     type="button" 
                     className="list-group-item list-group-item-action" 
                     data-bs-toggle="modal" 
                     data-bs-target="#episodeModal" 
                     key={index} 
-                    onClick={() => setEpisode(episode)} >
+                    onClick={() => setEpisode(episode)}>
                         {`Episode ${episode.id}: ${episode.name}`}
-                    </button> 
+                    </a> 
                 ))}
             </ul>
             <EpisodeModal

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Title from '../components/Title';
-import ListEpisodes from '../components/ListEpisodes.js';
+import ListEpisodes from '../components/Episodes/ListEpisodes.js';
 import Search from '../components/Search';
 import Pagination from '../components/Pagination';
 

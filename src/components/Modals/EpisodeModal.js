@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Characters from '../Characters.js';
+import Characters from '../Characters/Characters';
 
 function EpisodeModal(props) {
 
