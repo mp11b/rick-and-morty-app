@@ -32,7 +32,7 @@ const Episodes = () => {
         searchText={searchText} 
         setSearchText={setSearchText}
         setPageNumber={setPageNumber}/>
-        <div className="container-sm mt-5">
+        <div className="container mt-5">
             <ListEpisodes episodes={episodes}/>
         </div>
         <Pagination

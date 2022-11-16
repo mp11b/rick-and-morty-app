@@ -14,11 +14,15 @@ function Characters({characters = []}) {
         setOrigin(origin);
     }
 
+    let thereAreCharacters = characters.length;
+
     return(
         <div className="row">
-            {characters.map((character, index) => (
-                <CharacterCard character={character} index={index} getCharacterData={getCharacterData}/>
-            ))}
+            {
+                thereAreCharacters 
+                ? characters.map((character, index) => (<CharacterCard character={character} index={index} getCharacterData={getCharacterData}/>))
+                : <div class="alert alert-primary" role="alert">{`Characters not found :(`}</div>
+            }
             <CharacterModal
             character={character}
             origin={origin}
