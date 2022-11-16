@@ -1,4 +1,4 @@
-import MainContent from '../components/MainContent';
+import Characters from '../components/Characters';
 import Pagination from '../components/Pagination';
 import Search from '../components/Search';
 
@@ -30,7 +30,7 @@ function Home(){
         setSearchText={setSearchText}
         setPageNumber={setPageNumber}/>
         <div className="container mt-5">
-          <MainContent characters={characters}/>
+          <Characters characters={characters}/>
         </div>
         <Pagination
         info={info}
