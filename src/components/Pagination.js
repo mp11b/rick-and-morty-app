@@ -6,9 +6,9 @@ function Pagination({info, setPageNumber}) {
         <ReactPaginate 
         className="pagination justify-content-center gap-3 my-3 mt-5"
         nextLabel="Next"
-        nextClassName="btn btn-primary"
+        nextClassName="btn btn-outline-primary"
         previousLabel="Prev"
-        previousClassName="btn btn-primary"
+        previousClassName="btn btn-outline-primary"
         pageClasses="page-item"
         pageLinkClassName="page-link"
         onPageChange={(data) => setPageNumber(data.selected + 1)}

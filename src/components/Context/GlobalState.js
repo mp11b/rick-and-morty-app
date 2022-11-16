@@ -49,7 +49,8 @@ export const GlobalProvider = props => {
                 episodesFavorites: state.episodesFavorites, 
                 addCharacterToFavorites, 
                 addEpisodeToFavorites,
-                removeCharacterToFavorites}}>
+                removeCharacterToFavorites,
+                removeEpisodeToFavorites}}>
             {props.children}
         </GlobalContext.Provider>
     )

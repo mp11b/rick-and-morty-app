@@ -18,7 +18,7 @@ export default (state, action) => {
         case "REMOVE_EPISODE_TO_FAVORITES":
             return{
                 ...state,
-                charactersFavorites: state.episodesFavorites.filter((e) => e.id !== action.payload.id)
+                episodesFavorites: state.episodesFavorites.filter((e) => e.id !== action.payload.id)
             }
         default:
             return state

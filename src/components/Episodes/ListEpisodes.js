@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import EpisodeModal from '../Modals/EpisodeModal'
+import EpisodeFavoriteButton from './EpisodeFavoriteButton'
 
 function ListEpisodes({episodes = []}) {
 
@@ -9,15 +10,14 @@ function ListEpisodes({episodes = []}) {
         <div className="episodes">
             <ul className="list-group">
                 {episodes.map((episode, index) => (
-                    <a 
-                    type="button" 
-                    className="list-group-item list-group-item-action" 
-                    data-bs-toggle="modal" 
-                    data-bs-target="#episodeModal" 
-                    key={index} 
-                    onClick={() => setEpisode(episode)}>
-                        {`Episode ${episode.id}: ${episode.name}`}
-                    </a> 
+                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="text-decoration-none" href="/link1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#episodeModal"
+                        key={index}
+                        onClick={() => setEpisode(episode)}>{`Episode ${episode.id}: ${episode.name}`}</a>
+                        <a><EpisodeFavoriteButton episode={episode} /></a>
+                    </li>
                 ))}
             </ul>
             <EpisodeModal
