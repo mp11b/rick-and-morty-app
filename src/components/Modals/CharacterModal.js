@@ -12,7 +12,7 @@ function CharacterModal({character, origin, location}) {
                     </div>
                     <div className="modal-body text-center">
                         <div className="card" style={{width: "100%"}}>
-                            <img src={character.image} alt={character}/>
+                            <img className ="rounded" src={character.image} alt={character}/>
                             <ul className="list-group list-group-flush mt-3">
                                 <li className="list-group-item">{`Gender: ${character.gender}`}</li>
                                 <li className="list-group-item">{`Species: ${character.species}`}</li>

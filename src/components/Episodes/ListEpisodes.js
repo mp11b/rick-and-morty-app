@@ -24,7 +24,7 @@ function ListEpisodes({episodes = []}) {
                             </li>
                         ))}
                     </ul>
-                :  <div class="alert alert-primary" role="alert">{`Episodes not found :(`}</div>
+                :  <div class="alert alert-secondary" role="alert">{`Episodes not found :(`}</div>
             }
             <EpisodeModal
             id={episode.id}

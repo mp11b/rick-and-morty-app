@@ -5,7 +5,7 @@ function CharacterCard({character, index, getCharacterData}){
  
     return(
         <div className="col mb-4" key={index}>
-            <div className="card" 
+            <div className="card border border-gray border-3" 
             style={{minWidth:"100px"}}>
                 <img src={character.image} 
                 data-bs-toggle="modal" 

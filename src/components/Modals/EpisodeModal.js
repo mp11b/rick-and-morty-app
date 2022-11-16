@@ -28,7 +28,7 @@ function EpisodeModal(props) {
                     <div className="modal-body text-center">
                         <p>{`Air Date: ${props.airDate}`}</p>
                     </div>
-                    <div>
+                    <div className="content" >
                         <h3 className="text-center mb-5">Characters</h3>
                         <Characters characters = {characters}/>
                     </div>
