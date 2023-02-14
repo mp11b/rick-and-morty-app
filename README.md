@@ -1,3 +1,12 @@
+# Rick and Morty Wiki
+
+Wiki of characters and episodes of Rick and Morty. On this page you can see different characteristics of characters and episodes of the series.
+
+# Api
+
+Rick and Morty API: https://rickandmortyapi.com/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
